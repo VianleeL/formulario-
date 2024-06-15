@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header><h2>Formulario medico</h2> </header>
+
+        <form id="form-validation"novalidate>
+        <div class="form first">
+                <div class="details personal">
+                    <jspan class="title"><h3>Informacion personales</h3></span>
+
+                    <div class="class fields">
+                        <div class="input-field">
+                            <label>Nombre completo</label>
+                            <input type="text" placeholder= "Ingrese nombre completo" required >
+                            <small>Por favor llenar campo  </small>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Fecha de nacimiento</label>
+                            <input type="date" placeholder="Ingrese fecha de cumpleaños" required >
+                            <small>Por favor llenar campo  </small>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Edad</label>
+                            <input type="numbrer" placeholder="ingrese su edad " required >
+                            <small>Por favor llenar campo  </small>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numero de telefono</label>
+                            <input type="number" placeholder="Ingrase  su celular" required >
+                            <small>Por favor llenar campo  </small>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>correo elecronico </label>
+                            <input type="text" placeholder="ingrese correo electronico " required >
+                            <small>Por favor llenar campo  </small>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="details id">
+                    <jspan class="title"><h3> Datos personales</h3> </span>
+                    <div class="class fields">
+                        <div class="input-field">
+                            <label>cedula</label>
+                            <input type="number" placeholder="ingresa tu cedula" required>
+                            <small>Por favor llenar campo  </small>
+                        </div>
+                        <div class="input-field">
+                            <label>Estado civil</label>
+                            <input type="text" placeholder="Ingese su estado civil" required>
+                            <small>Por favor llenar campo  </small>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Direccion domiciliaria </label>
+                            <input type="text" placeholder="ingrese direccion" required>
+                            <small>Por favor llenar campo  </small>
+                        </div>
+                        <div class="input-field">
+                            <label>Nacionalidad </label>
+                            <input type="text" placeholder="ingrese nacionalidad" required>
+                            <small>Por favor llenar campo  </small>
+                        </div>
+                        <div class="input-field">
+                            <label>numero de telefono de emergencia </label>
+                            <input type="number" placeholder="ingrasa el celular" required>
+                            <small>Por favor llenar campo  </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Guardar">
+            </div>
+        </form>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>

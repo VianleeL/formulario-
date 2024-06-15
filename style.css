@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Florence, cursive;
+    
+} 
+small{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:palevioletred;
+}
+
+.container{
+    position:relative;
+    max-width:900px;
+    width: 100%;
+    border-radius: 6px;
+    padding:25px 30px ;
+    margin: 0  15px;
+    background-color: whitesmoke;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.1) ;
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600px;
+    color: blue;
+}
+.container form{
+position: relative;
+margin-top: 26px;
+min-height: 490px;
+background-color:blanchedalmond;
+border-radius: 3px;
+}
+.container form.details{
+margin-top: 30px;
+}
+.container form.details.id{
+    margin-top: 30px;
+    }
+.container form.title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px,0;
+    color:black;
+}
+
+.container form .fields{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100%/ 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+    
+}
+.input-field label{
+    font-size:12px ;
+    font-weight:500 ;
+    color: red;
+
+}
+.input-field input{
+    outline: none;
+    font-size:14px ;
+    font-weight: 400;
+    color: black;
+    padding: 0  15px;
+    height: 5vh;
+    width: 30vh;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 0.1px solid #323632;
+    padding: 0 15px;
+    border-bottom-width: 2.5px ;
+    transition: all 0.3s ease;
+}
+.input-field input:is(:focus,:valid){
+    border-color: rgb(10, 203, 139);*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.input-field input[type="date"]{
+    color: black;
+}
+.input-field input[type="date"]:valid {
+    color: black;
+}
+form .button{
+width: 50%;
+height: 40px ;
+margin: 40px 0;
+
+}
+form .button input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, plum, paleturquoise);
+    color: rgb(4, 97, 97);
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    border-radius: 5PX;
+}
+form .button input:hover{
+    background:linear-gradient(130deg,purple,skyblue);
+}
+.was-valdated{}
+@media(max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form.form-fields{
+    margin-bottom: 15px ;
+    width: 100%;
+    }
+    .container form{
+        max-height: 400px;
+    }
+}
