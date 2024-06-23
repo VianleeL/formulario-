@@ -1,90 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>  Formulario de Registro</title>
+    <link rel="stylesheet" href="b.css">
 </head>
 <body>
     <div class="container">
-        <header><h2>Formulario medico</h2> </header>
-
-        <form id="form-validation"novalidate>
-        <div class="form first">
-                <div class="details personal">
-                    <jspan class="title"><h3>Informacion personales</h3></span>
-
-                    <div class="class fields">
-                        <div class="input-field">
-                            <label>Nombre completo</label>
-                            <input type="text" placeholder= "Ingrese nombre completo" required >
-                            <small>Por favor llenar campo  </small>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Fecha de nacimiento</label>
-                            <input type="date" placeholder="Ingrese fecha de cumpleaños" required >
-                            <small>Por favor llenar campo  </small>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Edad</label>
-                            <input type="numbrer" placeholder="ingrese su edad " required >
-                            <small>Por favor llenar campo  </small>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Numero de telefono</label>
-                            <input type="number" placeholder="Ingrase  su celular" required >
-                            <small>Por favor llenar campo  </small>
-                        </div>
-                        
-                        <div class="input-field">
-                            <label>correo elecronico </label>
-                            <input type="text" placeholder="ingrese correo electronico " required >
-                            <small>Por favor llenar campo  </small>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="details id">
-                    <jspan class="title"><h3> Datos personales</h3> </span>
-                    <div class="class fields">
-                        <div class="input-field">
-                            <label>cedula</label>
-                            <input type="number" placeholder="ingresa tu cedula" required>
-                            <small>Por favor llenar campo  </small>
-                        </div>
-                        <div class="input-field">
-                            <label>Estado civil</label>
-                            <input type="text" placeholder="Ingese su estado civil" required>
-                            <small>Por favor llenar campo  </small>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Direccion domiciliaria </label>
-                            <input type="text" placeholder="ingrese direccion" required>
-                            <small>Por favor llenar campo  </small>
-                        </div>
-                        <div class="input-field">
-                            <label>Nacionalidad </label>
-                            <input type="text" placeholder="ingrese nacionalidad" required>
-                            <small>Por favor llenar campo  </small>
-                        </div>
-                        <div class="input-field">
-                            <label>numero de telefono de emergencia </label>
-                            <input type="number" placeholder="ingrasa el celular" required>
-                            <small>Por favor llenar campo  </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <form id="formulario">
+            <header><br><h2>Formulario de Registro</h2></header>
+        <div class="vian">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"placeholder= "Ingrese nombre completo" 
+    
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+    
+            <label for="cedula">Cédula:</label>
+            <input type="number" id="cedula" name="cedula" placeholder="ingrese su cedula" requ
+    
+            <label for="celular">Número de Celular:</label>
+            <input type="tel" id="celular" name="celular"  placeholder="ingrese su celular "req
+    
+            <label for="correo">Correo Electrónico:</label>
+                            </div>
+                            <input type="email" id="correo" name="correo"placeholder="ingrese c
+    
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Seleccione una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+    
+            <h4>Alergias:</h4>
+            <h3><label for= "Alergias"></label></h3>
+            <input type="checkbox" id="alergia1" name="alergias[]" value="Polen">
+            <label for="alergia1">Polen</label>
+            <input type="checkbox" id="alergia2" name="alergias[]" value="Nueces">
+            <label for="alergia2">Nueces</label>
+            <input type="checkbox" id="alergia3" name="alergias[]" value="Lácteos">
+            <label for="alergia3">Lácteos</label>
+            <input type="checkbox" id="alergia4" name="alergias[]" value="Otras">
+            <label for="alergia4">Otras</label><br>
+    
+            <h4>Ha estado internado:</h4>
+            <input type="radio" id="si" name="internado" value="si">
+            <label for="si">Sí</label>
+            <input type="radio" id="no" name="internado" value="no">
+            <label for="no">No</label><br><br>
+    
             <div class="button">
-                <input type="submit" value="Guardar">
+            <input type="submit" value="Enviar">
             </div>
-        </form>
+        </div>
+    </form>
     </div>
-    <script src="codigo.js"></script>
+    
+    <script src="c.js"></script>
 </body>
 </html>
